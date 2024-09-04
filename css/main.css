@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+    font-family: "ballet";
+    src: url("../assets/fonts/Ballet-Regular.ttf");
+}
+
+.ballet { font-family: "ballet"; }
+.rubik {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.box {
+    max-width: 1200px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 1201px) {
+        width: 100%;
+    }
+}
