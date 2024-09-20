@@ -5,13 +5,26 @@
     src: url("../assets/fonts/Ballet-Regular.ttf");
 }
 
-.ballet { font-family: "ballet"; }
-.rubik {
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+    font-family: 'amsterdam';
+    src: url('../assets/fonts/NewAmsterdam-Regular.ttf');
 }
+
+@font-face {
+    font-family: 'dancing';
+    src: url('../assets/fonts/DancingScript-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'oxygen';
+    src: url('../assets/fonts/Oxygen-Regular.ttf');
+}
+
+.ballet { font-family: "ballet"; }
+.rubik { font-family: "Rubik", sans-serif; }
+.amsterdam { font-family: 'amsterdam'; }
+.dancing { font-family: 'dancing'; }
+.oxygen { font-family: 'oxygen'; }
 
 .box {
     max-width: 1200px;
