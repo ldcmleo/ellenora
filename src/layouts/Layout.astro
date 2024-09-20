@@ -1,0 +1,58 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=New+Amsterdam&family=Oxygen:wght@300;400;700&display=swap');
+	
+	.oxygen-light {
+		font-family: "Oxygen", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+	}
+
+	.oxygen-regular {
+		font-family: "Oxygen", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	.oxygen-bold {
+		font-family: "Oxygen", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+	}
+
+	.dancing-script {
+		font-family: "Dancing Script", cursive;
+		font-optical-sizing: auto;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	.new-amsterdam-regular {
+		font-family: "New Amsterdam", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+
+</style>
