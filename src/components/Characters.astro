@@ -1,6 +1,45 @@
 ---
 
 ---
-<section class="py-8 box">
-    <h1 class="new-amsterdam-regular text-6xl text-pretty text-center">Characters</h1>
+<section class="box">
+    <h1 class="new-amsterdam-regular text-6xl text-pretty text-center pb-6 pt-16">Characters</h1>
+    <div class="cuadricula">
+        <div class="objects">
+            <img src="images/oc_portrait00.png" alt="Imagen 3" class="w-full h-auto">
+        </div>
+        <div class="objects">
+            <img src="images/chrct1.png" alt="Imagen 3" class="w-full h-auto">
+        </div>
+        <div class="objects">
+          <img src="images/charachtermss.png" alt="Imagen 1" class="w-full h-auto">
+        </div>
+        <div class="objects">
+            <img src="images/character.png" alt="Imagen 2" class="w-full h-auto">
+        </div>
+        <div class="objects">
+            <img src="images/play.png" alt="Imagen 3" class="w-full h-auto">
+        </div>
+        <div class="objects">
+            <img src="images/OC.png" alt="Imagen 3" class="w-full h-auto">
+        </div>
+    </div>      
 </section>
+<style>
+    .cuadricula {
+        display: inline-block;
+        box-sizing: border-box;
+        column-count: 3;
+        column-width: 345px;
+        column-gap: 20px;
+        border-radius: 5px;
+    }
+    .objects {
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        margin: 0 0 20px;
+        background-color: #fff; 
+        border-radius: 5px;
+        overflow: hidden;
+    }
+</style>

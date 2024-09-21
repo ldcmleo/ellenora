@@ -1,15 +1,10 @@
 ---
 import Characters from '../components/Characters.astro';
 import Navbar from '../components/Navbar.astro';
-import NavbarLink from '../components/NavbarLink.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Ellenora's Website">
-	<Navbar>
-		<NavbarLink Link="/" Text="Inicio" Active="true" />
-		<NavbarLink Link="/about" Text="About me" />
-		<NavbarLink Link="/portfolio" Text="Portfolio" />
-	</Navbar>
+	<Navbar />
 	<Characters />
 </Layout>
