@@ -1,0 +1,30 @@
+---
+
+---
+<header class="py-4 border-b">
+    <div class="flex justify-between items-center flex-col">
+        <a href="/" class="main-anchor dancing-script-bold text-5xl font-bold">Ellenora</a>
+        <nav class="flex items-center space-x-3">
+            <slot />
+        </nav>
+    </div>
+</header>
+<style>
+    .main-anchor {
+        background: linear-gradient(to right, rgb(218, 13, 54),rgb(247, 140, 156),rgb(159, 65, 221));
+        background-size: 200% 200%;
+        animation: rainbow 2s ease-in-out infinite;
+        background-clip: text;
+        -webkit-background-clip:text;
+        color:rgba(0,0,0,0);
+        display:block;
+        text-align:center;
+        transition: color .3s ease-in-out;
+    }
+
+    @keyframes rainbow { 
+        0%{background-position:left}
+        50%{background-position:right}
+        100%{background-position:left}
+    }
+</style>

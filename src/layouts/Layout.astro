@@ -1,4 +1,5 @@
 ---
+import Footer from '../components/Footer.astro';
 interface Props {
 	title: string;
 }
@@ -16,8 +17,9 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-orange-50 oxygen-regular">
 		<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
@@ -48,11 +50,22 @@ const { title } = Astro.props;
 		font-style: normal;
 	}
 
+	.dancing-script-bold {
+		font-family: "Dancing Script", cursive;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+	}
+
 	.new-amsterdam-regular {
 		font-family: "New Amsterdam", sans-serif;
 		font-weight: 400;
 		font-style: normal;
 	}
 
-
+	.box {
+		max-width: 1080px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 </style>
